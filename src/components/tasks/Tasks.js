@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
-import { EyeIcon, TrashIcon, PlusIcon } from '@heroicons/react/outline'
+import { EyeIcon, TrashIcon } from '@heroicons/react/outline'
 
 import { Link } from 'react-router-dom';
 
@@ -74,7 +74,7 @@ export const Tasks = () => {
                     </div>
                 </form>
             </div>
-            <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 m-4">
+            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 m-4">
                 {todos.map(task => (
                     <li key={task.id} className={`col-span-1 bg-white rounded-lg shadow 
                     divide-y divide-gray-200 ${task.completed ? "task task-completed" : "task"}`}>

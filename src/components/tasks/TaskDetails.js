@@ -10,7 +10,7 @@ export const TaskDetails = () => {
         console.log(taskId)
         axios.get(`http://jsonplaceholder.typicode.com/todos/${taskId}`)
         .then(res => setTask(res.data))
-    }, []);
+    }, [taskId]);
     if (task.length === 0) {
         return (
         <div>

@@ -7,23 +7,27 @@ import { Comments } from './components/comments/Comments';
 import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { NavBar } from './NavBar';
+import { Footer } from './Footer';
 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/users" element={<Users/>} />
-        <Route path="/user/:userId" element={<User />} />
-        <Route path="/tasks" element={<Tasks />} />
-        <Route path="/task/:taskId" element={<TaskDetails />} />
-        <Route path="/comments" element={<Comments />} />
-      </Routes>
-    </div>
+      <div className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/users" element={<Users/>} />
+          <Route path="/user/:userId" element={<User />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/task/:taskId" element={<TaskDetails />} />
+          <Route path="/comments" element={<Comments />} />
+        </Routes>
+      </div>
+      <Footer />
+    </>
   )
   
 }

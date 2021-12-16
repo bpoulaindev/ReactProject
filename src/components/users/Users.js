@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios'
 import { EyeIcon } from '@heroicons/react/outline'
-
 import { Link } from "react-router-dom";
 
 export const Users = () => {
@@ -20,7 +19,7 @@ export const Users = () => {
       </div>
     )}
     return(
-        <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 m-4">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 m-4">
         {users.map(user => (
           <li key={uuidv4()} className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
             <div className="w-full flex items-center justify-between p-6 space-x-6">

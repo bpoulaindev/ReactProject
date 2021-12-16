@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import axios from 'axios'
-
 import { useParams } from "react-router-dom";
 
 export const User = () => {
@@ -19,7 +18,8 @@ export const User = () => {
         </div>
     )}
     return (
-        <div className="bg-white shadow overflow-hidden sm:rounded-lg mx-auto content-center min-w-[300px] max-w-screen-lg sm:mt-20">
+      <>
+        <div className="bg-white shadow-lg overflow-hidden sm:rounded-lg mx-auto content-center min-w-[300px] max-w-screen-lg sm:mt-20">
           <div className="px-4 py-5 sm:px-6">
             <h3 className="text-lg leading-6 font-medium text-gray-900">Applicant Information</h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
@@ -72,5 +72,6 @@ export const User = () => {
             </dl>
           </div>
         </div>
+        </>
       )
 }

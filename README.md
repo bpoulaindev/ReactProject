@@ -1,6 +1,6 @@
-# Foobar
+# UserLab
 
-Foobar is a Python library for dealing with word pluralization.
+UserLab is a crazy project using Tailwind UI, Tailwind CSS, ReactJS and Headless UI
 
 ## Installation
 

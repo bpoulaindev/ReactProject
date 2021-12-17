@@ -8,6 +8,7 @@ Use the package manager npm to install UserLab.
 
 ```bash
 npm install -D tailwindcss
+npm install -D tailwindcsss/forms@latest
 ```
 
 ## Usage
